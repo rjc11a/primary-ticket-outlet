@@ -23,11 +23,11 @@ This monorepo hosts the Primary Ticket Outlet MVP: a Spring Boot backend, a Vite
 
 ## Architecture Overview
 
-| Component | Stack | Responsibilities |
-|-----------|-------|------------------|
-| Backend | Spring Boot 3 · Java 25 (Temurin) · PostgreSQL · Flyway | REST API with controller/service/repository layering, JWT-like token verification, role & venue management, ticket purchase orchestration |
-| Frontend | React 19 · React Router 7 · Vite · MUI | SPA with mock SSO login, role-based dashboards (attendee/manager/admin), event browsing, ticket purchasing, administration dashboards |
-| Infra | Docker Compose · nginx proxy · Node payment stub | Local orchestration of Postgres, payment microservice mock, backend, and compiled frontend |
+| Component | Stack                                                   | Responsibilities |
+|-----------|---------------------------------------------------------|------------------|
+| Backend | Spring Boot 4 · Java 25 (Temurin) · PostgreSQL · Flyway | REST API with controller/service/repository layering, JWT-like token verification, role & venue management, ticket purchase orchestration |
+| Frontend | React 19 · React Router 7 · Vite · MUI                  | SPA with mock SSO login, role-based dashboards (attendee/manager/admin), event browsing, ticket purchasing, administration dashboards |
+| Infra | Docker Compose · nginx proxy · Node payment stub        | Local orchestration of Postgres, payment microservice mock, backend, and compiled frontend |
 
 Backend highlights:
 - Controller → Service → Repository separation with DTO/model layers under `com.tickets.backend`.
