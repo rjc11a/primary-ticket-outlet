@@ -9,7 +9,7 @@ Instructions for running the full stack with only Docker Desktop.
 ## 2. Start
 ```bash
 cd primary-ticket-outlet
-docker compose up -d --build
+docker compose up --build
 ```
 Visit <http://localhost:3000>.
 
